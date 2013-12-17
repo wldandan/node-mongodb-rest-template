@@ -26,13 +26,13 @@ A flexible rest service built based on node + mongodb
 In this case, the resource is set person.
 
 - Create Person:  
-curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Wang Lei", "year": "2009"}' http://localhost:3000/person/create
+curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Zhang San", "year": "2009"}' http://localhost:3000/person/create
 
 - List Person:  
 curl -i -X GET http://localhost:3000/person/list
 
 - Update Person:  
-curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Cao Long Kai", "year": "2012"}' http://localhost:3000/person/update/52b061e43cb245990e9478b8
+curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Li Si", "year": "2012"}' http://localhost:3000/person/update/52b061e43cb245990e9478b8
 
 - Destroy Person  
 curl -i -X GET http://localhost:3000/person/delete/52b061e43cb245990e9478b8
