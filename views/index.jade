@@ -2,3 +2,12 @@ extends layout
 
 block content
   h1= title
+  div
+    p
+      | Create Person: curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Zhang San", "year": "2009"}' http://localhost:3000/person/create
+    p
+      | List Person: curl -i -X GET http://localhost:3000/person/list
+    p
+      | Update Person: curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Li Si", "year": "2012"}' http://localhost:3000/person/update/[id]
+    p
+      | Delete Person: curl -i -X GET http://localhost:3000/person/delete/[id]
