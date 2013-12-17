@@ -8,20 +8,22 @@ A flexible rest service built based on node + mongodb
 - npm install   
 - node app.js
 
-#### 3. The service channel are as follows:
+#### 3. You can extend the service channel
 
-- localhost:3000/person/create
+- localhost:3000/[resource]/create
 
-- localhost:3000/person/list
+- localhost:3000/[resource]/list
 
-- localhost:3000/person/read/id
+- localhost:3000/[resource]/read/id
 
-- localhost:3000/person/update/id
+- localhost:3000/[resource]/update/id
 
-- localhost:3000/person/delete/id
+- localhost:3000/[resource]/delete/id
 
 
-#### 4. Test requst by curl
+#### 4. Test request by curl
+
+In this case, the resource is set person.
 
 - Create Person:  
 curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Wang Lei", "year": "2009"}' http://localhost:3000/person/create
